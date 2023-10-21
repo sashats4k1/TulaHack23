@@ -75,6 +75,13 @@ namespace WebAppAutorization.Areas.Identity.Pages.Account
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
+            /// 
+            [Required]
+            [EmailAddress]
+            [Display(Name = "Number")]
+            public string Number { get; set; }
+
+
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
@@ -96,7 +103,7 @@ namespace WebAppAutorization.Areas.Identity.Pages.Account
             /// </summary>
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Compare("Password", ErrorMessage = "Password и Confirm password не совпадают.")]
             public string ConfirmPassword { get; set; }
         }
 
