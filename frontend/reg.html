@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+          <div class="logo">
+              <img src="./assets/иконка.png" alt="" height="37px" width="40px">
+          </div>
+          <h1 class="name">Увлеченные люди</h1>
+        </div>
+      </header>
+
+      <div class="main-reg">
+        <span class="span-reg">Регистрация</span>
+        <div class="field">
+            <div class="inputs">
+                <br>
+                <!-- <input type="text" placeholder="Введите номер телефона" id="input" class="phone"> <br> -->
+                <input type="text" placeholder="Введите номер телефона" id="input" class="phone"/>
+                <input type="text" placeholder="Введите пароль" id="input" class="pw"> <br>
+                <input type="text" placeholder="Подтвердите пароль" id="input" class="pwv">
+            </div> <br>
+            <div class="chkboxes">
+                <input type="checkbox" class="remember-me" name="remember" />
+                <label for="remember" class="rmbr">Запомнить меня</label>
+            </div>
+        </div>
+        <!-- <input name="button" type="submit" value="Зарегистрироваться" onClick="ValidPhone(), ValidPassword()"> -->
+        <button class="btn-reg" type="submit" onclick="ValidPhone()">Зарегистрироваться</button>
+        <!-- ValidPassword() -->
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+<input id="choose" name="i_like" required pattern="[Bb]anana|[Cc]herry" />
